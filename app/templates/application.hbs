@@ -1,12 +1,12 @@
 <div class="header">
-       <div class="" style="padding:0px;">
+       <div >
           <div class="pull-left switch_system_div">
             <img class="cmd5_1" src="/assets/images/invis.gif"/>
           </div>
           <ul class="nav nav-tabs pull-left top-menu" role="tablist">
           </ul>
-          <div class="navbar navbar-inverse pull-right" role="banner" style="margin-bottom:0px;">
-              <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" style="padding-right:0px;" role="navigation">
+          <div class="navbar navbar-inverse pull-right" role="banner">
+              <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                 <ul class="nav navbar-nav">
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">欢迎您，???<b class="caret"></b></a>
@@ -21,4 +21,24 @@
           </div>
        </div>
   </div>
-{{outlet}}
+  
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="sidebar content-box" style="display: block;">
+                <ul class="nav submenus">
+                 <li class="submenu open">
+                  <a href="#">教学任务<span class="caret pull-right"></span></a>
+                  <ul style="display: block;">
+                   <li>{{#link-to "lessons"}}全校任务查询{{/link-to}}</li>
+                  </ul>
+                 </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div id="page_right" class="page_right">{{outlet}}</div>
+        </div>
+    </div>
+</div>
+

@@ -9,6 +9,7 @@
 .header {
     background-color: #0072c6;
     height: 40px;
+    font-size:100%;line-height:1.2em
 }
 
 .header .logo h1 {
@@ -143,7 +144,13 @@
     border-top-color: #fff !important;
 }
 
+.header .nav > li > a{color:#fff; padding-top: 9px; padding-bottom:11px; font-size: 14px; border: 0px;border-radius: 0; margin-right: 0px;}
+.header .nav-tabs{border-bottom: 0px;}
+.header .nav > li.active a{background-color: #015797;}
+.header .nav > li > a:hover, .switch_system_div:hover{background-color: #0064AF; color:#fff;border: 0px;border-radius: 0;}
+
 .switch_system_div {
     cursor: pointer;
     padding: 12px;
 }
+

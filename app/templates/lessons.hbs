@@ -1,2 +1,38 @@
-haha
+
+<table class="gridtable table">
+    <thead class="gridhead">
+        <tr class="darkColumn" align="center">
+           <th class="select"><input id="taskIdBox" class="box" type="checkBox"></th>
+           <th style="" title="点击按 [课程序号] 排序" name="attr.taskNo" id="task.seqNo" class="tableHeaderSort" width="8%">课程序号</th>
+           <th style="" title="点击按 [课程代码] 排序" name="attr.courseNo" id="task.course.code" class="tableHeaderSort">课程代码</th>
+           <th style="" title="点击按 [课程名称] 排序" name="attr.courseName" id="task.course.name" class="tableHeaderSort" width="20%">课程名称</th>
+           <th style="" title="点击按 [课程类别] 排序" name="entity.courseType" id="task.courseType.name" class="tableHeaderSort" width="10%">课程类别</th>
+           <th style="" title="点击按 [教学班] 排序" name="entity.teachClass" id="task.teachClass.name" class="tableHeaderSort" width="20%">教学班</th>
+           <th name="entity.teacher" width="10%">教师</th>
+           <th style="" title="点击按 [计划] 排序" name="teachTask.planStudents" id="task.teachClass.planStdCount" class="tableHeaderSort" width="4%">计划</th>
+           <th style="" title="点击按 [学分] 排序" name="attr.credit" id="task.course.credits" class="tableHeaderSort" width="4%">学分</th>
+           <th style="" title="点击按 [周时] 排序" name="teachTask.weeksPerHour" id="task.arrangeInfo.weekUnits" class="tableHeaderSort" width="4%">周时</th>
+           <th style="" title="点击按 [周数] 排序" name="attr.weeks" id="task.arrangeInfo.weeks" class="tableHeaderSort" width="4%">周数</th>
+           <th style="" title="点击按 [课时] 排序" name="attr.creditHour" id="task.arrangeInfo.overallUnits" class="tableHeaderSort" width="4%">课时</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#each lesson in model.items}}
+    <tr>
+      <td></td>
+      <td>{{lesson.id}}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    {{/each}}
+    </tbody>
+</table>
 {{outlet}}
